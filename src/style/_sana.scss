@@ -1,0 +1,126 @@
+.sana {
+  font-family: "Montserrat";
+  &__logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    img {
+      width: 150px;
+      @media (min-width: 768px) {
+        width: 200px;
+      }
+      @media (min-width: 1024px) {
+        width: 300px;
+      }
+    }
+  }
+  &__banner {
+    margin-top: 10px;
+    @media (min-width: 768px) {
+      margin-top: 15px;
+    }
+    @media (min-width: 1024px) {
+      margin-top: 20px;
+    }
+    img {
+      object-fit: contain;
+    }
+  }
+  &__ribbon {
+    background-color: $color_main;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    h2 {
+      color: $color_green_light;
+      margin: 0;
+      padding: 0;
+      font-weight: 600;
+      font-size: 20px;
+      text-align: center;
+      @media (min-width: 768px) {
+        font-size: 25px;
+      }
+      @media (min-width: 1024px) {
+        font-size: 30px;
+      }
+    }
+    p {
+      margin: 0;
+      padding: 0;
+      color: $color_green_light;
+      font-weight: 300;
+      @media (min-width: 768px) {
+        font-size: 20px;
+      }
+      @media (min-width: 1024px) {
+        font-size: 22px;
+      }
+    }
+  }
+  &__wrappper_ {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $color_green_light;
+    @media (min-width: 1024px) {
+      @include max-width;
+      flex-direction: row;
+    }
+  }
+
+  &__nav {
+    background-color: $color_green_light;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    @media (min-width: 1024px) {
+      border-bottom: 2px solid $color_main;
+      margin-bottom: 0px;
+      padding: 0;
+    }
+    button {
+      color: $color_main;
+      font-size: 20px;
+      background-color: $color_green_light;
+      border: none;
+      @media (min-width: 768px) {
+        font-size: 23px;
+      }
+      @media (min-width: 1024px) {
+        font-weight: 400;
+        margin: 15px 0;
+      }
+      cursor: pointer;
+      outline: none;
+      &:hover{
+        background-color: transparent !important;
+        color: $color_secundary;
+      }
+      &.active {
+        border-bottom: 2px solid $color_main;
+        background-color: $color_green_light;
+        color: $color_secundary;
+        outline: none;
+        @media (min-width: 1024px) {
+          border-bottom: 0px solid $color_gren;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+
+  &__main-content {
+    section {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,46 @@
+.team{
+    padding: 50px 20px;
+    text-align: center;
+    &__h2{
+        margin-bottom: 30px;
+        font-size: 26px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $color_main;
+        @media (min-width: 724px) {
+            font-size: 30px;
+        }
+    }
+}
+.item{
+    // width: 100%!important;
+    margin: 0;
+    list-style: none;
+    &__figure{
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        
+        &--logo{
+            height: 150px;
+            width: 150px;
+            margin: 0 auto;
+            display: flex;
+        align-items: center;
+        }
+    }
+    &__p{
+        font-size: 16px;
+        color: black;
+    }
+    .glide{
+        @include max-content;
+        &__bullets{
+            bottom: 0;
+        }
+    }
+    .glide__slides{
+        display: flex;
+        // grid-template-columns: repeat( 5, minmax(250px, 1fr) );
+    }
+}

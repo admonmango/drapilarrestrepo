@@ -1,0 +1,18 @@
+
+// Required Core Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// Optional Theme Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+@import './utilities/variables';
+@import './utilities/medidas';
+@import './utilities/mixin';
+@import './layout/testimonial';
+@import './layout/team';
+@import './layout/solution';
+@import './pages/product';
+@import './mixin';
+@import './sana';
+@import './taps/tap-one';
+@import './taps/popup-window';
+@import './taps/tap-two'; 

@@ -1,0 +1,58 @@
+.sana__main-content {
+  #content_course {
+    padding-top: 50px;
+    @media (min-width: 1024px) {
+      padding-top: 100px;
+    }
+  }
+  #content2 {
+    padding: 0 20px;
+    text-align: center;
+    @media (min-width: 600px) {
+      text-align: left;
+      width: 80%;
+      margin: 0px auto;
+      margin-bottom: 100px;
+    }
+    @media (min-width: 1024px) {
+      width: 60%;
+    }
+    .ld-item-title {
+      color: black;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: left;
+      @media (min-width: 400px) {
+        margin-left: 15px;
+        font-size: 20px;
+      }
+    }
+    .ld-item-list-item-preview {
+      border-radius: 5px;
+    }
+  }
+  .ld-item-list.ld-lesson-list .ld-lesson-section-heading {
+    margin: 2em 0 0.5em;
+  }
+  .ld-section-heading {
+    h2 {
+      font-size: 26px !important;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: $color_main;
+      @media (min-width: 724px) {
+        font-size: 30px !important;
+      }
+      @media (min-width: 1024px) {
+        font-size: 35px !important;
+        font-weight: 700;
+      }
+    }
+  }
+  .ld-item-list-items .ld-lesson-section-heading {
+    color: black;
+  }
+}
+.learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-name {
+  align-items: center;
+}
